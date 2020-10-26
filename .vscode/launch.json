@@ -1,0 +1,37 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Launch Chrome against localhost",
+      "url": "http://localhost:8080",
+      "webRoot": "${workspaceFolder}"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Debug open program",
+      "program": "${file}"
+    },
+    {
+      "type": "node-terminal",
+      "name": "Run Script: test",
+      "request": "launch",
+      "command": "npm test -- ${fileBasenameNoExtension}.test.js"
+    },
+    {
+      "type": "node-terminal",
+      "name": "Run Script: test-watch",
+      "request": "launch",
+      "command": "npm test -- ${fileBasenameNoExtension}.test.js --watchAll"
+    },
+    {
+      "type": "node-terminal",
+      "name": "Run Script: test-all",
+      "request": "launch",
+      "command": "npm test",
+      "cwd": "${workspaceFolder}"
+    }
+  ]
+}

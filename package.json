@@ -1,0 +1,21 @@
+{
+	"name": "javascript",
+	"version": "1.0.0",
+	"description": "Various JavaScript and TypeScript files",
+	"main": "index.js",
+	"scripts": {
+		"test": "jest",
+		"test-all": "jest"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"jest": "^26.3.0",
+		"typescript": "^3.9.7"
+	},
+	"devDependencies": {
+		"@babel/plugin-proposal-class-properties": "^7.12.1",
+		"@babel/plugin-transform-modules-commonjs": "^7.12.1",
+		"@babel/plugin-transform-typescript": "^7.12.1"
+	}
+}
