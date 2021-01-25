@@ -1,6 +1,6 @@
 function firstDuplicateValue(array) {
   let cache = {};
-  for (let value in array) {
+  for (let value of array) {
     if (cache[value]) {
       return value;
     }
@@ -9,4 +9,4 @@ function firstDuplicateValue(array) {
   return -1;
 }
 
-firstDuplicateValue([2, 1, 5, 2, 3, 3, 4])
+console.log(firstDuplicateValue([2, 1, 5, 2, 3, 3, 4]))
